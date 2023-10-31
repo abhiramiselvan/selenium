@@ -18,11 +18,18 @@ time.sleep(1)
 
 LoginButtom = driver.find_element(By.ID, "login-button").click()
 
-cartButton = driver.find_elements(By.CLASS_NAME, "btn_inventory ")
-time.sleep(1)
-
-for elements in cartButton :
-    elements.click()
+cartButton = driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack").click()
+time.sleep(2)
+cartButton = driver.find_element(By.ID, "add-to-cart-sauce-labs-bike-light").click()
+time.sleep(2)
+cartButton = driver.find_element(By.ID, "add-to-cart-sauce-labs-bolt-t-shirt").click()
+time.sleep(2)
+cartButton = driver.find_element(By.ID, "add-to-cart-sauce-labs-fleece-jacket").click()
+time.sleep(2)
+cartButton = driver.find_element(By.ID, "add-to-cart-sauce-labs-onesie").click()
+time.sleep(2)
+cartButton = driver.find_element(By.ID, "add-to-cart-test.allthethings()-t-shirt-(red)").click()
+time.sleep(2)
 
 shopButton = driver.find_element(By.ID, "shopping_cart_container").click()
 time.sleep(2)
@@ -54,4 +61,3 @@ time.sleep(2)
 time.sleep(10)
 
 driver.quit()
-
